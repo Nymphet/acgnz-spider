@@ -9,10 +9,21 @@ import scrapy
 
 
 class AcgnzItem(scrapy.Item):
-    url = scrapy.Field()
-    title = scrapy.Field()
-    image_urls = scrapy.Field()
-    download_link = scrapy.Field()
-    download_code = scrapy.Field()
-    unarchive_password = scrapy.Field()
-    pass
+    url                                      = scrapy.Field()
+    title                                    = scrapy.Field()
+    image_urls                               = scrapy.Field()
+    download_link                            = scrapy.Field()
+    download_code                            = scrapy.Field()
+    unarchive_password                       = scrapy.Field()
+
+
+class AcglunaItem(scrapy.Item):
+    url                                      = scrapy.Field()
+    title                                    = scrapy.Field()
+    post_content                             = scrapy.Field()
+    image_urls                               = scrapy.Field()
+    possible_download_links__obsolete_style  = scrapy.Field()
+    possible_download_codes__obsolete_style  = scrapy.Field()
+    download_link                            = scrapy.Field()
+    download_code                            = scrapy.Field()
+    unarchive_password                       = scrapy.Field()

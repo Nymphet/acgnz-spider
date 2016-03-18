@@ -8,7 +8,11 @@
 import scrapy
 
 
-class AcgnzspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+class AcgnzItem(scrapy.Item):
+    url = scrapy.Field()
+    title = scrapy.Field()
+    image_urls = scrapy.Field()
+    download_link = scrapy.Field()
+    download_code = scrapy.Field()
+    unarchive_password = scrapy.Field()
     pass
